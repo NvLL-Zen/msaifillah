@@ -1,0 +1,27 @@
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionSatu {
+    height: 75vh;
+}
+
+#sectionDua {
+    height: 70vh;
+}
+
+#sectionTiga {
+    height: 70vh;
+}
+
+#sectionEmpat {
+    height: 70vh;
+}
+
+#footer {
+    height: 7.5vh;
+}

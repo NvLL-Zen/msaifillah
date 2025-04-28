@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    font-family: "Cal Sans";
+    padding: 7.5px;
+}
+
+.navTitle {
+    font-size: 2rem;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    gap: 2.5%;
+    width: 77.5%;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.75rem;
+}

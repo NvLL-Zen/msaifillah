@@ -26,5 +26,5 @@
     <h1>Kontak (sm QRIS buat infaq klo mau, tinggal ss trs taruh sini)</h1>
 </section>
 <section class="section" id="footer">
-    <h1>Copyright Masjid Saifillah 2025 | <a target="_blank" href="https://zenriel.tech">By Fauzan Rizky N</a></h1>
+    <h1>Copyright Masjid Saifillah 2025 | <a target="_blank" href="https://zenriel.tech">By ZENRIEL</a></h1>
 </section>

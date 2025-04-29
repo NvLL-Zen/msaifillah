@@ -11,7 +11,7 @@
 }
 
 #sectionDua {
-    height: 70vh;
+    height: fit-content;
 }
 
 #sectionTiga {
@@ -24,4 +24,19 @@
 
 #footer {
     height: 7.5vh;
+}
+
+.halfHorizontal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.halfWidth {
+    width: 50%;
+}
+
+.pad-20 {
+    padding: 20px;
 }

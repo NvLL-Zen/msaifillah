@@ -2,6 +2,10 @@
     import "../styles/global.css"
     import "../styles/navbar.css"
     import "../styles/section.css"
+
+    import "../styles/tentang.css"
+    import AnK1 from "../img/AnK1.webp"
+    import AnK2 from "../img/AnK2.webp"
 </script>
 
 <nav class="navbar">
@@ -17,7 +21,25 @@
     <h1>Foto masjid saifillah pagi hari + malem hari (tergantung waktu WIB, jadi nanti klo malem malem, klo pagi2, dua foto aja)</h1>
 </section>
 <section class="section" id="sectionDua">
-    <h1>Tentang masjid saifillah</h1>
+    <div class="halfHorizontal">
+        <div class="halfWidth pad-20">
+            <h1 class="tentangTitle textCenter"> 
+                ASSALAMUALAIKUM
+            </h1>
+            <p class="tentangPara">
+                Selamat Datang di Masjid Saifillah, yang berlokasi di Cluster Sevilla Serpong, Tangerang Selatan.
+            </p>
+        </div>
+        <div class="halfWidth pad-20">
+            <h1 class="tentangTitle textCenter">
+                Aktifitas dan Kegiatan
+            </h1>
+            <div class="tentangImages">
+                <img src="{AnK1}" alt="Aktifitas Dan Kegiatan 1">
+                <img src="{AnK2}" alt="Aktifitas Dan Kegiatan 2">
+            </div>
+        </div>
+    </div>
 </section>
 <section class="section" id="sectionTiga">
     <h1>Informasi2 terkait (kegiatan, program, dan lain2)</h1>

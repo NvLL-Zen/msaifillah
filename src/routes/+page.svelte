@@ -28,6 +28,7 @@
             </h1>
             <p class="tentangPara">
                 Selamat Datang di Masjid Saifillah, yang berlokasi di Cluster Sevilla Serpong, Tangerang Selatan.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quae culpa numquam animi libero? Repellendus expedita enim provident excepturi porro ea totam mollitia vel deserunt doloribus eveniet, accusamus nemo dolorem?
             </p>
         </div>
         <div class="halfWidth pad-20">
@@ -35,8 +36,10 @@
                 Aktifitas dan Kegiatan
             </h1>
             <div class="tentangImages">
-                <img src="{AnK1}" alt="Aktifitas Dan Kegiatan 1">
-                <img src="{AnK2}" alt="Aktifitas Dan Kegiatan 2">
+                
+                <img class="images" src="{AnK1}" alt="Aktifitas Dan Kegiatan 1">
+                <img class="images" src="{AnK2}" alt="Aktifitas Dan Kegiatan 2">
+                <img class="images" src="{AnK1}" alt="Aktifitas Dan Kegiatan 1">
             </div>
         </div>
     </div>

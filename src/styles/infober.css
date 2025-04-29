@@ -1,0 +1,36 @@
+.beritaList {
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    gap: 0;
+    border: 1px solid black;
+    
+}
+
+.beritaEntry {
+    text-decoration: none;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid black;
+    height: 25%;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.beritaEntry:hover{
+    scale: 1.05;
+    
+}
+
+.beritaLinks {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -40,6 +40,19 @@
     gap: 25px;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.just-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pad-20 {
     padding: 20px;
 }

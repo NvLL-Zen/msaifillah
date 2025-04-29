@@ -4,5 +4,6 @@
     /* border: 0.1px solid red; */
     box-sizing: border-box;
     font-family: "DM Sans";
+    scroll-behavior: smooth;
 }
 

@@ -8,6 +8,7 @@
 
 	import AnK1 from '../img/AnK1.webp';
 	import AnK2 from '../img/AnK2.webp';
+	import JadwalSalat from '../components/jadwalSalat.svelte';
 </script>
 
 <nav class="navbar">
@@ -40,6 +41,7 @@
 				<img class="images" src={AnK1} alt="Aktifitas Dan Kegiatan 1" />
 				<img class="images" src={AnK2} alt="Aktifitas Dan Kegiatan 2" />
 				<img class="images" src={AnK1} alt="Aktifitas Dan Kegiatan 1" />
+                <img class="images" src={AnK2} alt="Aktifitas Dan Kegiatan 2" />
 			</div>
 		</div>
 	</div>
@@ -55,7 +57,9 @@
 				<li class="beritaEntry"><a class="beritaLinks" href="./">(Tanggal) Berita D</a></li>
 			</ul>
 		</div>
-		<div class="halfWidth flex-center">Jadwal Sholat</div>
+		<div class="halfWidth flex-center">
+			<JadwalSalat></JadwalSalat>
+		</div>
 	</div>
 </section>
 <section class="section" id="sectionEmpat">

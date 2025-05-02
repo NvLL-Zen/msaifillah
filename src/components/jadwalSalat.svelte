@@ -2,17 +2,25 @@
 	import { onMount } from 'svelte';
 	import axios from 'axios';
 
+	import {hijriDate} from "../stores/hijriDate"
+
 	let prayerTime = null;
 	let error = null;
-	const targetDate = '2025-05-01';
+	const date = new Date();
+	const formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+
+	const targetDate = formattedDate;
+
+	const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+	const formattedIdDate = new Intl.DateTimeFormat('id-ID', options).format(date);
 
 	onMount(async () => {
-        const imsak = document.querySelector("#imsak")
-        const subuh = document.querySelector("#subuh")
-        const dzuhur = document.querySelector("#dzuhur")
-        const ashar = document.querySelector("#ashar")
-        const maghrib = document.querySelector("#maghrib")
-        const isya = document.querySelector("#isya")
+		const imsak = document.querySelector('#imsak');
+		const subuh = document.querySelector('#subuh');
+		const dzuhur = document.querySelector('#dzuhur');
+		const ashar = document.querySelector('#ashar');
+		const maghrib = document.querySelector('#maghrib');
+		const isya = document.querySelector('#isya');
 		try {
 			const response = await axios.get('https://waktu-sholat-huso.vercel.app/prayer', {
 				params: {
@@ -31,6 +39,7 @@
 
 			if (match) {
 				prayerTime = match.time;
+				console.log(prayerTime)
 			} else {
 				error = `No data for ${targetDate}`;
 			}
@@ -38,42 +47,42 @@
 			error = err.message;
 		}
 
-        imsak.innerHTML = prayerTime.imsak
-        subuh.innerHTML = prayerTime.subuh
-        dzuhur.innerHTML = prayerTime.dzuhur
-        ashar.innerHTML = prayerTime.ashar
-        maghrib.innerHTML = prayerTime.maghrib
-        isya.innerHTML = prayerTime.isya
+		imsak.innerHTML = prayerTime.imsak;
+		subuh.innerHTML = prayerTime.subuh;
+		dzuhur.innerHTML = prayerTime.dzuhur;
+		ashar.innerHTML = prayerTime.ashar;
+		maghrib.innerHTML = prayerTime.maghrib;
+		isya.innerHTML = prayerTime.isya;
 	});
 </script>
 
 <div class="praySchedule">
-	<h1 class="prayDate">(Tanggal)</h1>
-	<h1 class="prayDate">(Tanggal Hijriah)</h1>
+	<h1 class="prayDate">{formattedIdDate}</h1>
+	<h1 class="prayDate">{$hijriDate}</h1>
 	<ul>
-        <li class="prayerEntry">
+		<li class="prayerEntry">
 			Imsak
-			<p id="imsak">XX:XX</p>
+			<p id="imsak">fetching</p>
 		</li>
 		<li class="prayerEntry">
 			Subuh
-			<p id="subuh">XX:XX</p>
+			<p id="subuh">fetching</p>
 		</li>
 		<li class="prayerEntry">
 			Dzuhur
-			<p id="dzuhur">XX:XX</p>
+			<p id="dzuhur">fetching</p>
 		</li>
 		<li class="prayerEntry">
 			Ashar
-			<p id="ashar">XX:XX</p>
+			<p id="ashar">fetching</p>
 		</li>
 		<li class="prayerEntry">
 			Maghrib
-			<p id="maghrib">XX:XX</p>
+			<p id="maghrib">fetching</p>
 		</li>
 		<li class="prayerEntry">
 			Isya
-			<p id="isya">XX:XX</p>
+			<p id="isya">fetching</p>
 		</li>
 	</ul>
 </div>

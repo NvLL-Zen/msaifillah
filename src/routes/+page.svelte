@@ -14,10 +14,10 @@
 <nav class="navbar">
 	<a class="navTitle" href="./">SAIFILLAH</a>
 	<ul>
-		<li><a href="Tentang">Tentang</a></li>
-		<li><a href="Kegiatan">Kegiatan</a></li>
-		<li><a href="Berita">Berita</a></li>
-		<li><a href="Kontak">Kontak</a></li>
+		<li><a href="#Tentang">Tentang</a></li>
+		<li><a href="#Kegiatan">Kegiatan</a></li>
+		<li><a href="#Berita">Berita</a></li>
+		<li><a href="#Kontak">Kontak</a></li>
 	</ul>
 </nav>
 <section class="section" id="sevillaBG">

@@ -5,54 +5,49 @@
 
 	import '../styles/tentang.css';
 	import '../styles/infober.css';
+	import '../styles/kegiatan.css';
 
-	import AnK1 from '../img/AnK1.webp';
-	import AnK2 from '../img/AnK2.webp';
+	import AnKSlide from '../img/AnKSlide.webp';
 	import JadwalSalat from '../components/jadwalSalat.svelte';
 </script>
 
 <nav class="navbar">
 	<a class="navTitle" href="./">SAIFILLAH</a>
 	<ul>
-		<li>Tentang</li>
-		<li>Berita</li>
-		<li>Kegiatan</li>
-		<li>Kontak</li>
+		<li><a href="Tentang">Tentang</a></li>
+		<li><a href="Kegiatan">Kegiatan</a></li>
+		<li><a href="Berita">Berita</a></li>
+		<li><a href="Kontak">Kontak</a></li>
 	</ul>
 </nav>
-<section class="section" id="sectionSatu">
+<section class="section" id="sevillaBG">
 	<h1>
 		Foto masjid saifillah pagi hari + malem hari (tergantung waktu WIB, jadi nanti klo malem malem,
 		klo pagi2, dua foto aja)
 	</h1>
 </section>
-<section class="section" id="sectionDua">
-	<div class="halfHorizontal">
-		<div class="halfWidth pad-20">
-			<h1 class="tentangTitle textCenter">ASSALAMUALAIKUM</h1>
-			<p class="tentangPara">
-				Selamat Datang di Masjid Saifillah, yang berlokasi di Cluster Sevilla Serpong, Tangerang
-				Selatan. Website ini dikelola oleh .... lorem ipsum ...
-			</p>
-		</div>
-		<div class="halfWidth pad-20">
-			<h1 class="tentangTitle textCenter">Aktifitas dan Kegiatan</h1>
-			<div class="tentangImages">
-				<img class="images" src={AnK1} alt="Aktifitas Dan Kegiatan 1" />
-				<img class="images" src={AnK2} alt="Aktifitas Dan Kegiatan 2" />
-				<img class="images" src={AnK1} alt="Aktifitas Dan Kegiatan 1" />
-                <img class="images" src={AnK2} alt="Aktifitas Dan Kegiatan 2" />
-			</div>
-		</div>
-	</div>
+<section class="section" id="Tentang">
+	<h1 class="tentangTitle">ASSALAMUALAIKUM</h1>
+	<p class="tentangPara">
+		Selamat datang di laman web (semi-resmi) Masjid Saifillah yang berlokasi di Cluster Sevilla,
+		BSD, Tangerang Selatan.
+	</p>
 </section>
-<section class="section" id="sectionTiga">
+<section class="section" id="Kegiatan">
+	<h1 class="tentangTitle">Aktivitas dan Kegiatan</h1>
+	<img class="ankImg" src={AnKSlide} alt="Aktivitas dan Kegiatan" />
+</section>
+<section class="section" id="Berita">
 	<div class="halfHorizontal">
 		<div class="halfWidth pad-20">
 			<h1 class="textCenter tentangTitle">Berita dan Informasi</h1>
 			<ul class="beritaList">
-				<li class="beritaEntry"><a class="beritaLinks" href="./">(Tanggal) Info Sholat Jumat (Contoh)</a></li>
-				<li class="beritaEntry"><a class="beritaLinks" href="./">(Tanggal) Laporan Donasi #PrayForTurkiye (Contoh)</a></li>
+				<li class="beritaEntry">
+					<a class="beritaLinks" href="./">(Tanggal) Info Sholat Jumat (Contoh)</a>
+				</li>
+				<li class="beritaEntry">
+					<a class="beritaLinks" href="./">(Tanggal) Laporan Donasi #PrayForTurkiye (Contoh)</a>
+				</li>
 				<li class="beritaEntry"><a class="beritaLinks" href="./">(Tanggal) Berita C</a></li>
 				<li class="beritaEntry"><a class="beritaLinks" href="./">(Tanggal) Berita D</a></li>
 			</ul>
@@ -62,7 +57,7 @@
 		</div>
 	</div>
 </section>
-<section class="section" id="sectionEmpat">
+<section class="section" id="Kontak">
 	<h1>Kontak (sm QRIS buat infaq klo mau, tinggal ss trs taruh sini)</h1>
 </section>
 <section class="section" id="footer">

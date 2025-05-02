@@ -6,19 +6,24 @@
     justify-content: center;
 }
 
-#sectionSatu {
-    height: 75vh;
-}
-
-#sectionDua {
-    height: fit-content;
-}
-
-#sectionTiga {
+#sevillaBG {
     height: 70vh;
 }
 
-#sectionEmpat {
+#Tentang {
+    height: 20vh;
+    flex-direction: column;
+}
+
+#Kegiatan {
+    height: 70vh;
+}
+
+#Berita {
+    height: 70vh;
+}
+
+#Kontak {
     height: 70vh;
 }
 

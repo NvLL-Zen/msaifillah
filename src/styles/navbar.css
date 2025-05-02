@@ -2,10 +2,15 @@
     display: flex;
     font-family: "Cal Sans";
     padding: 7.5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    max-height: 10vh;
 }
 
 .navTitle {
-    font-size: 2rem;
+    font-size: var(--Subtitle);
     font-weight: 800;
     text-decoration: none;
     width: 20%;
@@ -19,5 +24,6 @@ ul {
     justify-content: right;
     align-items: center;
     list-style-type: none;
-    font-size: 1.75rem;
+    font-size: var(--NormalText);
+    font-weight: 600;
 }

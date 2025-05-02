@@ -1,0 +1,12 @@
+#Kegiatan {
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    gap: 2.5vh;
+}
+
+.ankImg {
+    width: 100%;
+    height: fit-content;
+}

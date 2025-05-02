@@ -7,3 +7,10 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --Title: 2.5rem;
+    --Subtitle: 2rem;
+    --NormalText: 1.5rem;
+    --Paragraph: 1.25rem;
+}
+

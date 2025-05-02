@@ -26,4 +26,21 @@ ul {
     list-style-type: none;
     font-size: var(--NormalText);
     font-weight: 600;
+    
+}
+
+.navbarEntry {
+    transition: all 0.35s ease;
+}
+
+.navbarEntry:hover {
+    scale: 1.05;
+}
+
+.navbarLinks {
+    transition: all 0.35s ease;
+}
+
+.navbarLinks:hover {
+    color: red;
 }

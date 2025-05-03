@@ -8,9 +8,9 @@
 }
 
 :root {
-    --Title: 2.5rem;
-    --Subtitle: 2rem;
-    --NormalText: 1.5rem;
-    --Paragraph: 1.25rem;
-}
+    --Title: clamp(1.8rem, 4vw, 2.5rem);       /* Scales between 1.8rem (mobiles) and 2.5rem (1080p) */
+    --Subtitle: clamp(1.5rem, 3.5vw, 2rem);
+    --NormalText: clamp(1.1rem, 2.5vw, 1.5rem);
+    --Paragraph: clamp(1rem, 2vw, 1.25rem);
+  }
 

@@ -8,4 +8,6 @@
 .tentangPara {
     font-size: var(--Paragraph);
     font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
 }

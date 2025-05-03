@@ -89,7 +89,9 @@
 
 <style>
 	.prayDate {
-		height: 10%;
+		height: fit-content;
+		padding-top: 5px;
+		padding-bottom: 5px;
 		text-align: center;
 		color: black;
 		background-color: rgb(1, 219, 226);

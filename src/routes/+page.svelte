@@ -8,6 +8,7 @@
 	import '../styles/kegiatan.css';
 
 	import AnKSlide from '../img/AnKSlide.webp';
+	import AnKMobile from '../img/AnKmobile.webp'
 	import JadwalSalat from '../components/jadwalSalat.svelte';
 
 	import { scrollToCenter } from '../lib/scroll.js';
@@ -38,7 +39,8 @@
 </section>
 <section class="section" id="Kegiatan">
 	<h1 class="tentangTitle">Aktivitas dan Kegiatan</h1>
-	<img class="ankImg" src={AnKSlide} alt="Aktivitas dan Kegiatan" />
+	<img class="ankImg" id="AnKPC" src={AnKSlide} alt="Aktivitas dan Kegiatan" />
+	<img class="ankImg" id="AnKMobile" src={AnKMobile} alt="Aktivitas dan Kegiatan" />
 </section>
 <section class="section" id="Berita">
 	<div class="halfHorizontal">

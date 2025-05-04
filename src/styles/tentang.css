@@ -3,6 +3,7 @@
 .tentangTitle {
     font-size: var(--Title);
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 .tentangPara {
@@ -10,4 +11,5 @@
     font-weight: 600;
     padding-left: 15px;
     padding-right: 15px;
+    backdrop-filter: blur(10px);
 }

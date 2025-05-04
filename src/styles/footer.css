@@ -1,0 +1,10 @@
+#footer {
+    font-size: var(--Footer);
+    color: white;
+    background-color: black;
+    
+}
+
+.footerText {
+    color: white;
+}

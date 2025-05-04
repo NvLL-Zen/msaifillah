@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "DM Sans";
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 :root {
@@ -12,5 +13,6 @@
     --Subtitle: clamp(1.5rem, 3.5vw, 2rem);
     --NormalText: clamp(1.1rem, 2.5vw, 1.5rem);
     --Paragraph: clamp(1rem, 2vw, 1.25rem);
+    --Footer: clamp(0.75rem, 1.5vw, 1rem)
   }
 

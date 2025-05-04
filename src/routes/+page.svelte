@@ -6,10 +6,14 @@
 	import '../styles/tentang.css';
 	import '../styles/infober.css';
 	import '../styles/kegiatan.css';
+	import '../styles/footer.css'
 
 	import AnKSlide from '../img/AnKSlide.webp';
 	import AnKMobile from '../img/AnKmobile.webp'
 	import JadwalSalat from '../components/jadwalSalat.svelte';
+
+	import SaifillahPC from '../img/Saifillah_Wide.webp'
+	import SaifillahMobile from '../img/Saifillah_Mobile.webp'
 
 	import { scrollToCenter } from '../lib/scroll.js';
 
@@ -25,18 +29,17 @@
 	</ul>
 </nav>
 <section class="section" id="sevillaBG">
-	<h1>
-		Foto masjid saifillah pagi hari + malem hari (tergantung waktu WIB, jadi nanti klo malem malem,
-		klo pagi2, dua foto aja)
-	</h1>
+	<img id="Saifillah_PC" class="SaifillahBG" src={SaifillahPC} alt="Masjid Saifillah">
+	<img id="Saifillah_Mobile" class="SaifillahBG" src={SaifillahMobile} alt="Masjid Saifillah">
+	<section class="section" id="Tentang">
+		<h1 class="tentangTitle">ASSALAMUALAIKUM</h1>
+		<p class="tentangPara">
+			Selamat datang di laman web (semi-resmi) Masjid Saifillah yang berlokasi di Cluster Sevilla,
+			BSD, Tangerang Selatan.
+		</p>
+	</section>
 </section>
-<section class="section" id="Tentang">
-	<h1 class="tentangTitle">ASSALAMUALAIKUM</h1>
-	<p class="tentangPara">
-		Selamat datang di laman web (semi-resmi) Masjid Saifillah yang berlokasi di Cluster Sevilla,
-		BSD, Tangerang Selatan.
-	</p>
-</section>
+
 <section class="section" id="Kegiatan">
 	<h1 class="tentangTitle">Aktivitas dan Kegiatan</h1>
 	<img class="ankImg" id="AnKPC" src={AnKSlide} alt="Aktivitas dan Kegiatan" />
@@ -66,7 +69,7 @@
 	<h1>Kontak (sm QRIS buat infaq klo mau, tinggal ss trs taruh sini)</h1>
 </section>
 <section class="section" id="footer">
-	<h1>
-		Copyright Masjid Saifillah 2025 | <a target="_blank" href="https://zenriel.tech">By ZENRIEL</a>
+	<h1 class="footerText">
+		ⓒ Masjid Saifillah 2025 | <a class="footerText" target="_blank" href="https://zenriel.tech">By ZENRIEL</a>
 	</h1>
 </section>

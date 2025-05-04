@@ -7,12 +7,27 @@
 }
 
 #sevillaBG {
-    height: 70vh;
+    height: fit-content;
+
+}
+
+.SaifillahBG {
+    width: 100%;
+    height: 95vh;
+}
+
+#Saifillah_Mobile {
+    display: none;
 }
 
 #Tentang {
-    height: 20vh;
+    height: 20%;
+    width: fit-content;
     flex-direction: column;
+    align-self: self-end;
+    z-index: 5;
+    position: absolute;
+    color: white;
 }
 
 #Kegiatan {
@@ -70,5 +85,13 @@
     .halfWidth {
         width: 100%;
         height: 50%;
+    }
+
+    #Saifillah_PC {
+        display: none;
+    }
+
+    #Saifillah_Mobile {
+        display: block;
     }
 }

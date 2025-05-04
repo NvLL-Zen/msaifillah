@@ -91,14 +91,16 @@
 	.prayDate {
 		height: fit-content;
 		padding: 5px;
+		margin-top: 1%;
 		text-align: center;
 		color: black;
 		background-color: rgb(1, 219, 226);
+		border-radius: 5px;
 	}
 
 	.praySchedule {
 		width: 70%;
-		height: 75%;
+		height: fit-content;
 		justify-self: normal;
 	}
 
@@ -106,6 +108,8 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+		height: 15%;
+		align-items: center;
 		padding: 5px;
 		padding-left: 20px;
 		padding-right: 20px;
@@ -114,7 +118,7 @@
 
 	ul {
 		width: 100%;
-		height: 80%;
+		height: 85%;
 		display: flex;
 		flex-direction: column;
 		text-align: left;
@@ -122,10 +126,14 @@
 		align-items: baseline;
 	}
 
+	li {
+		border-bottom: 1px solid black;
+	}
+
 	@media only screen and (max-width: 720px){
 		.praySchedule {
-			width: 80%;
-			height: 90%;
+			width: 85%;
+			height: fit-content;
 		}
 	}
 </style>

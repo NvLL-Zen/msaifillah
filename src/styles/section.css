@@ -87,6 +87,10 @@
         height: 50%;
     }
 
+    #Berita {
+        height: 100vh;
+    }
+
     #Saifillah_PC {
         display: none;
     }

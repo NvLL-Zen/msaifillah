@@ -90,8 +90,7 @@
 <style>
 	.prayDate {
 		height: fit-content;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding: 5px;
 		text-align: center;
 		color: black;
 		background-color: rgb(1, 219, 226);
@@ -99,7 +98,7 @@
 
 	.praySchedule {
 		width: 70%;
-		height: 70%;
+		height: 75%;
 		justify-self: normal;
 	}
 
@@ -121,5 +120,12 @@
 		text-align: left;
 		justify-content: space-between;
 		align-items: baseline;
+	}
+
+	@media only screen and (max-width: 720px){
+		.praySchedule {
+			width: 80%;
+			height: 90%;
+		}
 	}
 </style>

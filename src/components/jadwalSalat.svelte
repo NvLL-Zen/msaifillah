@@ -22,7 +22,7 @@
 		const maghrib = document.querySelector('#maghrib');
 		const isya = document.querySelector('#isya');
 		try {
-			const response = await axios.get('http://loscos4w40ko04sss0cg0wo4.70.153.72.107.sslip.io/prayer', {
+			const response = await axios.get('https://loscos4w40ko04sss0cg0wo4.70.153.72.107.sslip.io/prayer', {
 				params: {
 					latitude: -6.283825,
 					longitude: 106.713994444445
